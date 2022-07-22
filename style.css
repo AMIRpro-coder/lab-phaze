@@ -1,0 +1,423 @@
+
+.first-logo{
+    animation:  animate 2s infinite;
+  }
+  @keyframes animate{
+    0%{transform: rotate(0deg) }
+    100%{transform: rotate(720deg)}
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+/* this is my nav bar*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',  sans-serif;        
+}
+body{
+       min-height: 200vh;
+        background-image:url("img/background/background.jpg");
+        width:100% ;
+        height: 100%;
+        padding: 0;
+        margin: 0px ;
+        text-transform: uppercase;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }   
+   body{
+    justify-content: center;
+    align-items: center;
+    min-height:100vh ;
+   }
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000; 
+    font-size: 20px;
+}
+header.sticky{
+    padding: 32px 100px;
+    background: #fff;
+} 
+.logo{
+    display: flex;
+    position: relative;
+}
+.first-logo{
+    display: flex;
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 60px;
+    margin-bottom: 1px;
+   
+}   
+ header .logo{
+    position: relative;
+    font-weight: 700;   
+    color:  red;
+    font-size: 34px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+header ul {
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    margin: 0 15px; 
+    text-decoration: none;
+    color:  rgb(111, 111, 111);
+    letter-spacing : 2px;
+    font-weight: 500px;
+    transition: 0.6s;   
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}           
+
+
+.banner{
+    position:relative ;
+    width: 100%;
+    height: 100vh;
+
+    background-size: cover  ;
+    height: 250px;
+}   
+header.sticky.logo,
+header.sticky ul li a
+{
+    color: rgb(0, 0, 0);
+}  
+.homelogo {
+display: flex;
+width: 60px;
+height: 40px;
+margin-top: 10px;
+}
+.controleimg{
+    width: 50px;
+    height: 50px;
+}
+
+li :hover{
+    color: black;
+    text-shadow: 10px 10px 20px rgb(0, 0, 0),10px 10px 20px green;
+}
+
+
+.item{
+width: 300px;
+height: 200px;
+}
+.bach{
+font-family: 'lato' , sans-serif;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background: linear-gradient(to right,rgb(9, 255, 0), rgb(0, 255, 247));
+    min-height: 100vh;
+    
+}
+.h2-c{
+    margin-top: 100px;
+    text-align: center;
+}
+.wrapper{
+    display: flex;
+margin-left: 100px;
+}
+#wrapper2{
+    display: flex;
+margin-left: 30px;
+}
+.croussel-cell{
+    width:66% ;
+    height:500px ;}
+
+.card{
+    margin-right: 70px;
+   
+    width: 400px;
+    height: 350px;
+    padding: 2rem 1rem;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px slategrey;
+    transition: 0.5s ease-in-out;
+ 
+}
+
+.card:hover{
+    transform: translateY(20px);
+}
+.card:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display:block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,rgba(0,176,155,0.5),rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+.card:hover:before{
+    opacity: 1;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 25px;
+}
+.card .info{
+    position: relative;
+    z-index: 3;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    color: #fff;
+}
+.card:hover .info{
+    opacity: 1;
+}
+.html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0px;
+}
+.slider{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f;
+    overflow: hidden;
+    position: absolute;
+}
+.slider > *{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #1f1f1f ;
+    animation: slide 12s infinite;
+    overflow: hidden;
+}
+.slide:nth-child(1){
+    left: 0%;
+}
+.slide:nth-child(2){
+    left: 0%;
+}
+.slide:nth-child(3){
+    left: 0%;
+}
+.slide:nth-child(4){
+    left: 0%;
+}
+.container{
+    padding: 20px;
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 15%;
+}
+.container .box{
+    position: relative;
+    width: 320px;
+    background: #fff;
+    padding: 100px 400px 60px ;
+    box-shadow: 0 15px 45px rgb(rgb(0,0,0,0.1));
+}
+.food{
+    margin-bottom: 82px;
+}
+/*croussel*/
+h1{
+    font-size: 54px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-family: 'Odibee Sans', cursive;
+    margin-bottom: 0;
+  }
+  
+  #css {
+    color: yellow;
+    font-family: 'Odibee Sans', cursive;
+  }
+  
+  .carousel-wrapper {
+    height: 400px;
+    position: relative;
+    width: 800px;
+    display: block;
+    margin: 50px auto ;
+    border: 2px solid black;
+  }
+  
+  .carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .arrow{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+  }
+  .arrow-prev {
+    left: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+  
+  }
+  .arrow-next {
+    right: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  
+  [id^= "item"] {
+    display: none;
+  }
+  .item-1 {
+    z-index: 2;
+    opacity: 1;
+    background: url('img/slides/vegtables.jpg');
+    background-size: cover;
+  }
+  .item-2 {
+    background: url('img/slides/hamburger.jpeg');
+    background-size: cover;
+  }
+  .item-3 {
+    background: url('img/slides/a\ salde\ in\ lunch\ box.jfif');
+    background-size: cover;
+  }
+  
+  *:target ~ .item-1{
+    opacity: 0;
+  }
+  #item-1:target ~ .item-1 {
+    opacity: 1;
+  
+  }
+  #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+  } 
+
+.container-galery{
+    flex-wrap: wrap;
+}
+#container{
+   margin-left: 14%;
+    padding: 50px;
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container .box{
+    border-radius: 5%;
+    position: relative;
+    width: 280px;
+    height: 320px;
+    background: #fff;
+    padding: 0 15px 45px 23 rgb(0,0,0,0.1);
+    padding-top: 100px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+.container .box:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:  100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(255, 136, 0), red); 
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+    border-radius: 5%;
+}
+.container .box:hover:before{
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+.container .box h2{
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    font-size:4em ;
+    font-weight: 800;
+    z-index: 1;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.container .box:hover h2{
+    opacity: 1;
+    color: #fff;
+    transform: translateY(-40px);
+}
+
+.container.box h3{
+position: relative;
+font-size: 1.5em;
+z-index:2;  
+color: #333;
+transition: 0.5;
+}
+.container .box:hover p{
+    opacity: 1;
+    color: #fff;
+    transform: translateY(-10px);
+}
+.container .box:hover h3{
+    opacity: 1;
+    color: #fff ;
+    transform: translateY(-10px);
+}
+
+

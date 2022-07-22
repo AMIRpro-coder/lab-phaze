@@ -1,0 +1,166 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dmak</title>
+    <link rel="stylesheet" href="index.css">
+   <!-- Fontawesome CDN Link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body>
+   <header>
+   
+    <!--the nav bar-->
+    <a href="#home" class="logo">Dmak
+        <img class="first-logo" src="img/logo.jpg" alt="">
+    </a>
+        <ul>
+            <li><a href="#Home">Home</a></li>                  
+            <li><a href="main.html">Food</a></li>   
+            <li><a href="#About">About us</a></li>  
+            <li><a href="#Contact">Contact</a></li>        
+            <li><a href="#Rating">Rating</a></li> 
+        </ul>
+   </header>  
+   <!--the script-->  
+   <section class="banner"></section>
+   <script type="text/javascript">
+    window.addEventListener("scroll",function(){
+        var header = document.querySelector("header"); 
+        header.classList.toggle("sticky",window.scrollY > 0 );
+    })
+   </script>
+   <!--the script end -->
+   <!--the home section-->
+  <section id="Home">
+   </div>
+   <!--images-->
+      <!--the start of the paragraphe-->
+    <div class="gallery">
+      <div class="all-the-p">
+        <p style="display: inline; color:blue" >Welcome</p>
+        to 
+     <p style="display: inline; color:black";>Dmak</p>
+        a  web site, which  make you more comfortable and save you a lot of time, so kindly put in Food section the food for your student, then enter his school, and you're done :) 
+     </div>
+      <!--this is the end of the paragraphe-->
+      <!--animaton-->
+      <div class="stretch">
+        <img class="grid-item" src="img/galery/galery1.jpg" alt="">
+      </div>
+      <div class="stretch">
+        <img class="grid-item"  src="img/galery/galery2.webp" alt="">
+      </div>
+
+      <div class="stretch">
+        <img class="grid-item" src="img/galery/background.jpg" alt="">
+      </div>
+      <div class="stretch">
+        <img class="grid-item" src="img/galery/i.jfif" alt="">
+      </div>
+    </div> 
+    <!--the end the images-->
+      <!--img slides-->
+        <div class="slider">
+         <div class="to-reserve">
+            <a class="to-reserve1" href="main.html" >click me to reserve </a>
+         </div>
+    </div>
+  </section>
+<br><br><hr><br><br>
+<!--the end of the section and the main-->
+
+<!--the start of the about us-->
+ <section id="About">
+  <div class="about">
+    <h1 class="student1" style="color:rgb(255, 120, 0) ;">About </h1>
+    <div class="container">
+      <div class="box">
+          <h2>01</h2>
+          <h3>i'am</h3>
+          <br>
+          <p >hello,i am Amir,i am 13 years old ,front end dev,i live in Tunisa, i'm a prep school student and i love programing and coding.</p>
+      </div>
+      <div class="box">
+          <h2>02</h2>
+          <h3>my thanks</h3>
+          <br>
+          <p> I appreciate my teacher's kindness and assistance. I also enjoy my college; they are wonderful.and funny .</p>
+      </div>
+      <div class="box">
+          <h2>03</h2>
+          <h3>go my code</h3>
+          <br>
+          <p>thank you go my code i realy like this days with you</p>
+      </div>
+  </div>
+  <br>
+  <div class="about-img">
+  <img class="student" src="img/icon/amir.jpg" alt="">
+  <img class="student" src="img/about/2.webp" alt="">
+  <img class="student" src="img/about/3.png" alt="">
+  </div>
+  </div>
+ </section>
+ <br>
+ <div class="container">
+	<div class="row">
+			<h1>contact us</h1>
+	</div>
+	<div class="row">
+			<h4 style="text-align:center">We'd love to hear from you!</h4>
+	</div>
+	<div class="row input-container">
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" required />
+					<label>Name</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input">
+					<input type="text" required />
+					<label>Email</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input" style="float:right;">
+					<input type="text" required />
+					<label>Phone Number</label> 
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<textarea required></textarea>
+					<label>Message</label>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="btn-lrg submit-btn">Send Message</div>
+			</div>
+	</div>
+</div>
+
+ </section>
+ <section id="Rating">
+  <div class="rate">
+    <h1 style="color: rgb(210, 81, 103);"> Rating</h1>
+    <br><br><br>
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+ </section>
+ 
+ <br><br><br>
+ <h1 class="final" style="color: brown;">thank you for watching, and i hope you endjoy</h1>
+</body>
+</html> 

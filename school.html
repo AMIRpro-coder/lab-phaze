@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>school</title>
+    <link rel="stylesheet" href="school.css">
+</head>
+<body>
+    <header>
+        <!--the nav bar-->
+        <a href="#home" class="logo">DmaK
+            <img class="first-logo" src="img/logo.jpg" alt="">
+        </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>                  
+                <li><a href="main.html">Food</a></li>   
+                <li><a href="#About us">About us</a></li>  
+                <li><a href="#">Contact</a></li>        
+                <li><a href="#Rating">Rating</a></li> 
+            </ul>
+       </header>    
+       <section class="banner"></section>
+       <script type="text/javascript">
+        window.addEventListener("scroll",function(){
+            var header = document.querySelector("header"); 
+            header.classList.toggle("sticky",window.scrollY > 0 );
+        }) 
+       </script>
+       <H1 style="color:green ; text-align: center;">
+       <form action="name">YOUR FOOD PRICE IS</form>
+    </H1>
+    <H1 style="color:green   ; text-align: center;">
+       <form action="price">15$</form>
+       </H1>
+       <br><br>
+       <main>
+        <h1>Choose your school</h1>
+        <br>
+       <div class="select">
+            <select name="format" id="format">
+                <option selected disabled>Choose your school</option>
+                <option value="school1">School mezah 5</option>
+                <option value="school2">School Mezah 6</option>
+                <option value="school3">school Manouba pilote</option>
+                <option value="school4">schoot private PMF</option>
+            </select>   
+       </div>
+       <br>
+       <a class="sub-btn" href="https://goo.gl/maps/nydFcHFfZtrQwqKaA">
+        <h2 style="color:rgb(56, 175, 135) ;">! submit-now !</h2>
+       </a>
+       </main>  
+</body>
+</html>

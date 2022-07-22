@@ -1,0 +1,159 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+/* this is my nav bar*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',  sans-serif;    
+}
+
+body{
+    min-height: 200vh;
+    background-image: url(img/img-with-logo.webp);
+    }   
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000; 
+    font-size: 20px;
+}
+header.sticky{
+    padding: 32px 100px;
+    background: #fff;
+} 
+.logo{
+    display: flex;
+    position: relative;
+}
+.first-logo{
+    display: flex;
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 60px;
+    margin-bottom: 1px;
+   
+}   
+ header .logo{
+    position: relative;
+    font-weight: 700;   
+    color:  red;
+    font-size: 34px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+header ul {
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    margin: 0 15px; 
+    text-decoration: none;
+    color: lightgreen   ;
+    letter-spacing : 2px;
+    font-weight: 500px;
+    transition: 0.6s;   
+}           
+
+
+.banner{
+    position:relative ;
+    width: 100%;
+    height: 100vh;
+
+    background-size: cover  ;
+    height: 250px;
+}   
+header.sticky.logo,
+header.sticky ul li a
+{
+    color: rgb(0, 0, 0);
+}  
+.homelogo {
+display: flex;
+width: 60px;
+height: 40px;
+margin-top: 10px;
+}
+
+li :hover{
+    color: black;
+    text-shadow: 10px 10px 20px black,10px 10px 20px green;
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+ main {
+display: flex;
+flex-direction: column;
+
+height: 100vh;
+margin-left: 40%;
+ }
+ select{
+    margin-left: 20%;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0;
+    background: #5c6664;
+    background-image:none;
+ }
+ select::-ms-expand{
+    display: none;
+ }
+ .select{
+    display: flex;
+    width: 20em;
+    height: 3em;
+    background-color: #5c6664;
+    overflow: hidden;
+    border-radius: 25em;
+ }
+ select{
+    flex: 1;
+    padding: 0.5em;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+ }
+ select::after{
+    content: '\25bc';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.1em;
+ }
+ .sub-btn{
+    margin-left:9%;
+ }
+select:hover{
+   color: #00aac4;
+    
+ }
